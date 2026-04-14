@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Портфолио — UI/UX Дизайнер</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Cursor Glow Effect -->
+    <div class="cursor-glow"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="#" class="logo">Портфолио</a>
+            <ul class="nav-links">
+                <li><a href="#home">Главная</a></li>
+                <li><a href="#projects">Проекты</a></li>
+                <li><a href="#about">Обо мне</a></li>
+                <li><a href="#contact">Контакты</a></li>
+            </ul>
+            <button class="menu-toggle" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-bg">
+            <div class="gradient-orb orb-1"></div>
+            <div class="gradient-orb orb-2"></div>
+            <div class="gradient-orb orb-3"></div>
+        </div>
+        <div class="container">
+            <div class="hero-content">
+                <p class="hero-subtitle">UI/UX Дизайнер & Креативный Разработчик</p>
+                <h1 class="hero-title">
+                    Создаю Цифровой<br>
+                    <span class="gradient-text">Опыт</span>
+                </h1>
+                <p class="hero-description">
+                    Я проектирую и создаю современные, элегантные интерфейсы, которые сочетают эстетику с функциональностью.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">Смотреть Проекты</a>
+                    <a href="#contact" class="btn btn-secondary">Связаться</a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="floating-card card-1">
+                    <div class="card-icon">🎨</div>
+                    <span>UI Дизайн</span>
+                </div>
+                <div class="floating-card card-2">
+                    <div class="card-icon">⚡</div>
+                    <span>Разработка</span>
+                </div>
+                <div class="floating-card card-3">
+                    <div class="card-icon">✨</div>
+                    <span>Анимация</span>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span>Скролл</span>
+            <div class="scroll-line"></div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-header">
+                <p class="section-subtitle">Избранные Работы</p>
+                <h2 class="section-title">Выбранные Проекты</h2>
+            </div>
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card" data-aos="fade-up">
+                    <div class="project-image project-1">
+                        <div class="project-overlay">
+                            <h3>Лендинг 1</h3>
+                            <p>Современный дизайн</p>
+                            <span class="project-tag">UI/UX Дизайн</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 2 -->
+                <div class="project-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="project-image project-2">
+                        <div class="project-overlay">
+                            <h3>Лендинг 2</h3>
+                            <p>Креативный подход</p>
+                            <span class="project-tag">Веб-Дизайн</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 3 -->
+                <div class="project-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="project-image project-3">
+                        <div class="project-overlay">
+                            <h3>Лендинг 3</h3>
+                            <p>Минималистичный стиль</p>
+                            <span class="project-tag">Брендинг</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 4 -->
+                <div class="project-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="project-image project-4">
+                        <div class="project-overlay">
+                            <h3>Лендинг 4</h3>
+                            <p>Уникальное решение</p>
+                            <span class="project-tag">UI Дизайн</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <p class="section-subtitle">Обо Мне</p>
+                    <h2 class="section-title">Проектируя Будущее</h2>
+                    <p class="about-description">
+                        С страстью к чистому, современному дизайну, я создаю цифровой опыт, который захватывает пользователей и приносит результаты. 
+                        Мой подход сочетает минималистичную эстетику с интуитивной функциональностью.
+                    </p>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <div class="skill-icon">🎯</div>
+                            <h4>UI Дизайн</h4>
+                            <p>Чистые, современные интерфейсы</p>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">💻</div>
+                            <h4>Разработка</h4>
+                            <p>Адаптивные и быстрые</p>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">🎬</div>
+                            <h4>Анимация</h4>
+                            <p>Плавные микро-взаимодействия</p>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">📱</div>
+                            <h4>Mobile First</h4>
+                            <p>Оптимизация для всех устройств</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-stats">
+                    <div class="stat-card">
+                        <span class="stat-number" data-count="25">0</span>
+                        <span class="stat-label">Проектов Завершено</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-number" data-count="15">0</span>
+                        <span class="stat-label">Довольных Клиентов</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-number" data-count="2">0</span>
+                        <span class="stat-label">Года Опыта</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="contact-content">
+                <div class="contact-info">
+                    <p class="section-subtitle">Связаться</p>
+                    <h2 class="section-title">Давайте Работать Вместе</h2>
+                    <p class="contact-description">
+                        Есть идея для проекта? Давайте создадим что-то удивительное вместе.
+                    </p>
+                    <div class="contact-links">
+                        <a href="mailto:hello@portfolio.com" class="contact-link">
+                            <span class="link-icon">📧</span>
+                            hello@portfolio.com
+                        </a>
+                        <a href="#" class="contact-link">
+                            <span class="link-icon">📍</span>
+                            Доступен По Всему Миру
+                        </a>
+                    </div>
+                    <div class="social-links">
+                        <a href="#" class="social-link" aria-label="Behance">Be</a>
+                        <a href="#" class="social-link" aria-label="Dribbble">Dr</a>
+                        <a href="#" class="social-link" aria-label="LinkedIn">Li</a>
+                        <a href="#" class="social-link" aria-label="Instagram">Ig</a>
+                    </div>
+                </div>
+                <form class="contact-form">
+                    <div class="form-group">
+                        <input type="text" placeholder="Ваше Имя" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Ваш Email" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea placeholder="Ваше Сообщение" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-full">Отправить Сообщение</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Портфолио. Все права защищены.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
