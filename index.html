@@ -3,21 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Портфолио — UI/UX Дизайнер</title>
+    <title>Попов Алексей — Креативный Разработчик</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Cursor Glow Effect -->
     <div class="cursor-glow"></div>
 
-    <!-- Navigation -->
     <nav class="navbar">
         <div class="container">
-            <a href="#" class="logo">Портфолио</a>
+            <a href="#" class="logo">ПОТОК</a>
             <ul class="nav-links">
                 <li><a href="#home">Главная</a></li>
+                <li><a href="#services">Услуги</a></li>
                 <li><a href="#projects">Проекты</a></li>
+                <li><a href="#reviews">Отзывы</a></li>
                 <li><a href="#about">Обо мне</a></li>
                 <li><a href="#contact">Контакты</a></li>
             </ul>
@@ -29,7 +29,6 @@
         </div>
     </nav>
 
-    <!-- Hero Section -->
     <section id="home" class="hero">
         <div class="hero-bg">
             <div class="gradient-orb orb-1"></div>
@@ -38,31 +37,30 @@
         </div>
         <div class="container">
             <div class="hero-content">
-                <p class="hero-subtitle">UI/UX Дизайнер & Креативный Разработчик</p>
+                <p class="hero-subtitle">Креативный Разработчик</p>
                 <h1 class="hero-title">
-                    Создаю Цифровой<br>
-                    <span class="gradient-text">Опыт</span>
+                    Попов<br>
+                    <span class="gradient-text">Алексей</span>
                 </h1>
                 <p class="hero-description">
-                    Я проектирую и создаю современные, элегантные интерфейсы, которые сочетают эстетику с функциональностью.
+                    Превращаю идеи в современные цифровые продукты: от Telegram-ботов и Mini Apps 
+                    до лендингов и веб-сервисов. Пишу чистый код, проектирую удобные интерфейсы 
+                    и довожу проекты до работающего результата.
                 </p>
                 <div class="hero-buttons">
-                    <a href="#projects" class="btn btn-primary">Смотреть Проекты</a>
-                    <a href="#contact" class="btn btn-secondary">Связаться</a>
+                    <a href="#services" class="btn btn-primary">Мои услуги</a>
+                    <a href="#projects" class="btn btn-secondary">Портфолио</a>
                 </div>
             </div>
             <div class="hero-visual">
                 <div class="floating-card card-1">
-                    <div class="card-icon">🎨</div>
-                    <span>UI Дизайн</span>
+                    <span>Telegram Боты</span>
                 </div>
                 <div class="floating-card card-2">
-                    <div class="card-icon">⚡</div>
-                    <span>Разработка</span>
+                    <span>Веб-Сайты</span>
                 </div>
                 <div class="floating-card card-3">
-                    <div class="card-icon">✨</div>
-                    <span>Анимация</span>
+                    <span>Mini Apps</span>
                 </div>
             </div>
         </div>
@@ -72,51 +70,232 @@
         </div>
     </section>
 
-    <!-- Projects Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-header">
+                <p class="section-subtitle">Пакеты Разработки</p>
+                <h2 class="section-title">Telegram-боты, сайты и Mini Apps</h2>
+            </div>
+            <div class="services-grid">
+                <div class="service-card" data-aos="fade-up">
+                    <div class="service-header">
+                        <h3>Лендинг / Сайт</h3>
+                        <div class="service-price">от 30 000 ₽</div>
+                    </div>
+                    <p class="service-desc">Одностраничный сайт или многостраничный — под ключ</p>
+                    <ul class="service-features">
+                        <li>Современный адаптивный дизайн</li>
+                        <li>Оптимизация под мобильные устройства</li>
+                        <li>Форма обратной связи, интеграции</li>
+                        <li>Настройка хостинга и домена</li>
+                        <li>Базовая SEO-оптимизация</li>
+                    </ul>
+                    <div class="service-tech">
+                        <span>HTML/CSS/JS</span>
+                        <span>Vue/React</span>
+                        <span>Адаптив</span>
+                    </div>
+                </div>
+
+                <div class="service-card popular" data-aos="fade-up" data-aos-delay="100">
+                    <div class="service-badge">Популярный</div>
+                    <div class="service-header">
+                        <h3>Telegram Бот</h3>
+                        <div class="service-price">25 000 — 40 000 ₽</div>
+                    </div>
+                    <p class="service-desc">Для старта бизнеса, базовый функционал</p>
+                    <ul class="service-features">
+                        <li>Приветственное сообщение и меню с кнопками</li>
+                        <li>Система рассылок (акции, скидки, новинки)</li>
+                        <li>Бонусная система (баллы за подписку, приглашение друга)</li>
+                        <li>Сбор заявок (имя + телефон → администратору)</li>
+                        <li>FAQ-раздел с кнопками</li>
+                    </ul>
+                    <div class="service-tech">
+                        <span>Docker</span>
+                        <span>PostgreSQL</span>
+                        <span>JS/C#</span>
+                    </div>
+                </div>
+
+                <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="service-header">
+                        <h3>Telegram Mini App</h3>
+                        <div class="service-price">70 000 — 120 000 ₽</div>
+                    </div>
+                    <p class="service-desc">Полноценный инструмент продаж внутри Telegram</p>
+                    <ul class="service-features">
+                        <li>Всё из пакета «Telegram Бот»</li>
+                        <li>Telegram Mini App (каталог, корзина, профиль)</li>
+                        <li>Личный кабинет (история заказов, бонусы)</li>
+                        <li>Админ-панель (контент, статистика, модерация)</li>
+                        <li>Интеграция с CRM и чатом менеджеров</li>
+                    </ul>
+                    <div class="service-tech">
+                        <span>C# Бэкенд</span>
+                        <span>PostgreSQL</span>
+                        <span>Docker</span>
+                        <span>HTML/CSS/JS</span>
+                    </div>
+                </div>
+
+                <div class="service-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="service-header">
+                        <h3>Корпоративный</h3>
+                        <div class="service-price">150 000 — 300 000+ ₽</div>
+                    </div>
+                    <p class="service-desc">Для среднего и крупного бизнеса</p>
+                    <ul class="service-features">
+                        <li>Всё из пакета «Telegram Mini App»</li>
+                        <li>Приём платежей + чеки внутри Telegram</li>
+                        <li>Система ролей (админ, модератор, менеджер, пользователь)</li>
+                        <li>Глубокая аналитика (воронки, активность, удержание)</li>
+                        <li>Интеграция с 1С, МойСклад, ERP через API</li>
+                        <li>Автодеплой и мониторинг сбоев</li>
+                    </ul>
+                    <div class="service-tech">
+                        <span>C#</span>
+                        <span>PostgreSQL</span>
+                        <span>Docker</span>
+                        <span>Vue/React</span>
+                    </div>
+                </div>
+
+                <div class="service-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="service-header">
+                        <h3>Индивидуальный</h3>
+                        <div class="service-price">Цена индивидуально</div>
+                    </div>
+                    <p class="service-desc">Нестандартные задачи</p>
+                    <ul class="service-features">
+                        <li>Интеграция с нейросетями</li>
+                        <li>Big Data, геолокация</li>
+                        <li>Парсеры, геймификация</li>
+                        <li>Любые кастомные решения</li>
+                    </ul>
+                    <div class="service-tech">
+                        <span>Под ваш проект</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="services-extra" data-aos="fade-up">
+                <h3>Дополнительные услуги</h3>
+                <div class="extra-grid">
+                    <div class="extra-item">
+                        <span class="extra-title">Хостинг и деплой</span>
+                        <span class="extra-price">от 5 000 ₽</span>
+                    </div>
+                    <div class="extra-item">
+                        <span class="extra-title">Техподдержка и обновления</span>
+                        <span class="extra-price">от 10 000 ₽/мес</span>
+                    </div>
+                    <div class="extra-item">
+                        <span class="extra-title">Дизайн сайта / Mini App</span>
+                        <span class="extra-price">от 15 000 ₽</span>
+                    </div>
+                    <div class="extra-item">
+                        <span class="extra-title">Написание ТЗ</span>
+                        <span class="extra-price">от 5 000 ₽</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <section id="projects" class="projects">
         <div class="container">
             <div class="section-header">
-                <p class="section-subtitle">Избранные Работы</p>
-                <h2 class="section-title">Выбранные Проекты</h2>
+                <p class="section-subtitle">Портфолио</p>
+                <h2 class="section-title">Мои Проекты</h2>
             </div>
             <div class="projects-grid">
-                <!-- Project 1 -->
-                <div class="project-card" data-aos="fade-up">
-                    <div class="project-image project-1">
+                <div class="project-card" data-aos="fade-up" data-project="1">
+                    <div class="project-thumb">
+                        <img src="images/screenshot-9.png" alt="Проект 5" loading="lazy">
                         <div class="project-overlay">
-                            <h3>Лендинг 1</h3>
-                            <p>Современный дизайн</p>
-                            <span class="project-tag">UI/UX Дизайн</span>
+                            <span class="project-count">2 фото</span>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Сайт школы танцев</h3>
+                        <p>Яркий сайт для школы танцев с расписанием, тренерами и записью на пробное занятие</p>
+                        <div class="project-tags">
+                            <span>Веб-сайт</span>
+                            <span>Расписание</span>
+                            <span>Запись</span>
                         </div>
                     </div>
                 </div>
-                <!-- Project 2 -->
-                <div class="project-card" data-aos="fade-up" data-aos-delay="100">
-                    <div class="project-image project-2">
+
+                <div class="project-card" data-aos="fade-up" data-aos-delay="100" data-project="4">
+                    <div class="project-thumb">
+                        <img src="images/screenshot-7.png" alt="Проект 4" loading="lazy">
                         <div class="project-overlay">
-                            <h3>Лендинг 2</h3>
-                            <p>Креативный подход</p>
-                            <span class="project-tag">Веб-Дизайн</span>
+                            <span class="project-count">2 фото</span>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Социальная сеть — дизайн</h3>
+                        <p>Дизайн-концепция и UI/UX для социальной сети: лента, профили, мессенджер</p>
+                        <div class="project-tags">
+                            <span>UI/UX</span>
+                            <span>Дизайн</span>
+                            <span>Концепция</span>
                         </div>
                     </div>
                 </div>
-                <!-- Project 3 -->
-                <div class="project-card" data-aos="fade-up" data-aos-delay="200">
-                    <div class="project-image project-3">
+
+                <div class="project-card" data-aos="fade-up" data-aos-delay="200" data-project="3">
+                    <div class="project-thumb">
+                        <img src="images/screenshot-5.png" alt="Проект 3" loading="lazy">
                         <div class="project-overlay">
-                            <h3>Лендинг 3</h3>
-                            <p>Минималистичный стиль</p>
-                            <span class="project-tag">Брендинг</span>
+                            <span class="project-count">2 фото</span>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Кибербезопасность — обучение</h3>
+                        <p>Корпоративный портал для обучения сотрудников основам кибербезопасности с тестами и сертификатами</p>
+                        <div class="project-tags">
+                            <span>Веб-сайт</span>
+                            <span>Обучение</span>
+                            <span>Тесты</span>
                         </div>
                     </div>
                 </div>
-                <!-- Project 4 -->
-                <div class="project-card" data-aos="fade-up" data-aos-delay="300">
-                    <div class="project-image project-4">
+
+                <div class="project-card" data-aos="fade-up" data-aos-delay="300" data-project="2">
+                    <div class="project-thumb">
+                        <img src="images/screenshot-3.png" alt="Проект 2" loading="lazy">
                         <div class="project-overlay">
-                            <h3>Лендинг 4</h3>
-                            <p>Уникальное решение</p>
-                            <span class="project-tag">UI Дизайн</span>
+                            <span class="project-count">2 фото</span>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Лендинг для септиков</h3>
+                        <p>Продающий лендинг с калькулятором стоимости, формой заявки и картой</p>
+                        <div class="project-tags">
+                            <span>Лендинг</span>
+                            <span>Калькулятор</span>
+                            <span>Форма</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-aos="fade-up" data-aos-delay="400" data-project="5">
+                    <div class="project-thumb">
+                        <img src="images/screenshot-1.png" alt="Проект 1" loading="lazy">
+                        <div class="project-overlay">
+                            <span class="project-count">2 фото</span>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Сайт онлайн-школы</h3>
+                        <p>Полноценный сайт для онлайн-школы с системой уроков, тестами и личным кабинетом ученика</p>
+                        <div class="project-tags">
+                            <span>Веб-сайт</span>
+                            <span>Обучение</span>
+                            <span>Кабинет</span>
                         </div>
                     </div>
                 </div>
@@ -124,59 +303,153 @@
         </div>
     </section>
 
-    <!-- About Section -->
+    <div id="lightbox" class="lightbox">
+        <button class="lightbox-close">&times;</button>
+        <button class="lightbox-nav lightbox-prev">&#10094;</button>
+        <div class="lightbox-content">
+            <img src="" alt="screenshot" id="lightbox-img">
+        </div>
+        <button class="lightbox-nav lightbox-next">&#10095;</button>
+        <div class="lightbox-counter">
+            <span id="lightbox-current">1</span> / <span id="lightbox-total">2</span>
+        </div>
+    </div>
+
+    <section id="reviews" class="reviews">
+        <div class="container">
+            <div class="section-header">
+                <p class="section-subtitle">Отзывы</p>
+                <h2 class="section-title">Что говорят клиенты</h2>
+            </div>
+            <div class="reviews-grid" id="reviews-grid">
+                <div class="review-card" data-aos="fade-up">
+                    <div class="review-stars">★★★★★</div>
+                    <p class="review-text">Сделал бота для нашего интернет-магазина. Работает отлично, клиенты довольны. Особенно удобно, что всё в Telegram — не нужно устанавливать отдельное приложение.</p>
+                    <div class="review-author">
+                        <div class="review-avatar">М</div>
+                        <div>
+                            <strong>Михаил</strong>
+                            <span>Владелец магазина</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="review-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="review-stars">★★★★★</div>
+                    <p class="review-text">Заказывал корпоративного бота с интеграцией 1С. Сделали быстро, всё настроили, обучили персонал. Очень довольны результатом.</p>
+                    <div class="review-author">
+                        <div class="review-avatar">А</div>
+                        <div>
+                            <strong>Анна</strong>
+                            <span>Директор компании</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="review-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="review-stars">★★★★★</div>
+                    <p class="review-text">Mini App для доставки — топ! Клиенты заказывают прямо в Telegram, удобно и быстро. Спасибо за качественную работу и поддержку после запуска.</p>
+                    <div class="review-author">
+                        <div class="review-avatar">Д</div>
+                        <div>
+                            <strong>Дмитрий</strong>
+                            <span>CEO сервиса доставки</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="review-form" data-aos="fade-up">
+                <h3>Оставить отзыв</h3>
+                <form id="review-form">
+                    <div class="review-form-row">
+                        <div class="form-group">
+                            <input type="text" id="review-name" placeholder="Ваше Имя" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="review-company" placeholder="Компания или должность">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <select id="review-rating">
+                            <option value="5">★★★★★</option>
+                            <option value="4">★★★★☆</option>
+                            <option value="3">★★★☆☆</option>
+                            <option value="2">★★☆☆☆</option>
+                            <option value="1">★☆☆☆☆</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="review-text" placeholder="Ваш отзыв" rows="3" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Оставить отзыв</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
     <section id="about" class="about">
         <div class="container">
             <div class="about-content">
                 <div class="about-text">
                     <p class="section-subtitle">Обо Мне</p>
-                    <h2 class="section-title">Проектируя Будущее</h2>
+                    <h2 class="section-title">Креативный Разработчик</h2>
                     <p class="about-description">
-                        С страстью к чистому, современному дизайну, я создаю цифровой опыт, который захватывает пользователей и приносит результаты. 
-                        Мой подход сочетает минималистичную эстетику с интуитивной функциональностью.
+                        Меня зовут Алексей Попов. Я создаю цифровые продукты, которые решают реальные задачи бизнеса: 
+                        от Telegram-ботов и Mini Apps до лендингов и веб-сервисов. 
+                        Мой подход — чистый код, современные технологии и внимание к деталям на каждом этапе.
                     </p>
                     <div class="skills-grid">
                         <div class="skill-item">
-                            <div class="skill-icon">🎯</div>
-                            <h4>UI Дизайн</h4>
-                            <p>Чистые, современные интерфейсы</p>
+                            <div class="skill-icon">🔷</div>
+                            <h4>C# / .NET</h4>
+                            <p>Бэкенд и бизнес-логика</p>
                         </div>
                         <div class="skill-item">
-                            <div class="skill-icon">💻</div>
-                            <h4>Разработка</h4>
-                            <p>Адаптивные и быстрые</p>
+                            <div class="skill-icon">🟨</div>
+                            <h4>JS / TypeScript</h4>
+                            <p>Фронтенд и скрипты</p>
                         </div>
                         <div class="skill-item">
-                            <div class="skill-icon">🎬</div>
-                            <h4>Анимация</h4>
-                            <p>Плавные микро-взаимодействия</p>
+                            <div class="skill-icon">🟦</div>
+                            <h4>Vue / React</h4>
+                            <p>Современные интерфейсы</p>
                         </div>
                         <div class="skill-item">
-                            <div class="skill-icon">📱</div>
-                            <h4>Mobile First</h4>
-                            <p>Оптимизация для всех устройств</p>
+                            <div class="skill-icon">🐍</div>
+                            <h4>Python</h4>
+                            <p>Вспомогательные задачи</p>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">🐳</div>
+                            <h4>Docker</h4>
+                            <p>Контейнеризация и деплой</p>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">🗄️</div>
+                            <h4>PostgreSQL</h4>
+                            <p>Базы данных</p>
                         </div>
                     </div>
                 </div>
                 <div class="about-stats">
                     <div class="stat-card">
-                        <span class="stat-number" data-count="25">0</span>
-                        <span class="stat-label">Проектов Завершено</span>
+                        <span class="stat-number" data-count="15">0</span>
+                        <span class="stat-label">Проектов Запущено</span>
                     </div>
                     <div class="stat-card">
-                        <span class="stat-number" data-count="15">0</span>
+                        <span class="stat-number" data-count="12">0</span>
                         <span class="stat-label">Довольных Клиентов</span>
                     </div>
                     <div class="stat-card">
                         <span class="stat-number" data-count="2">0</span>
-                        <span class="stat-label">Года Опыта</span>
+                        <span class="stat-label">Года Разработки</span>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Contact Section -->
     <section id="contact" class="contact">
         <div class="container">
             <div class="contact-content">
@@ -184,23 +457,21 @@
                     <p class="section-subtitle">Связаться</p>
                     <h2 class="section-title">Давайте Работать Вместе</h2>
                     <p class="contact-description">
-                        Есть идея для проекта? Давайте создадим что-то удивительное вместе.
+                        Есть идея для проекта? Напишите мне — обсудим детали и подберём оптимальное решение.
                     </p>
                     <div class="contact-links">
-                        <a href="mailto:hello@portfolio.com" class="contact-link">
+                        <a href="mailto:qlepeshka@gmail.com" class="contact-link">
                             <span class="link-icon">📧</span>
-                            hello@portfolio.com
+                            qlepeshka@gmail.com
                         </a>
-                        <a href="#" class="contact-link">
-                            <span class="link-icon">📍</span>
-                            Доступен По Всему Миру
+                        <a href="https://t.me/qLepeshka" class="contact-link" target="_blank">
+                            <span class="link-icon">✈️</span>
+                            @qLepeshka
                         </a>
                     </div>
                     <div class="social-links">
-                        <a href="#" class="social-link" aria-label="Behance">Be</a>
-                        <a href="#" class="social-link" aria-label="Dribbble">Dr</a>
-                        <a href="#" class="social-link" aria-label="LinkedIn">Li</a>
-                        <a href="#" class="social-link" aria-label="Instagram">Ig</a>
+                        <a href="https://t.me/qLepeshka" class="social-link" aria-label="Telegram" target="_blank">Tg</a>
+                        <a href="mailto:qlepeshka@gmail.com" class="social-link" aria-label="Email">Em</a>
                     </div>
                 </div>
                 <form class="contact-form">
@@ -211,18 +482,20 @@
                         <input type="email" placeholder="Ваш Email" required>
                     </div>
                     <div class="form-group">
-                        <textarea placeholder="Ваше Сообщение" rows="5" required></textarea>
+                        <input type="text" placeholder="Telegram (необязательно)">
                     </div>
-                    <button type="submit" class="btn btn-primary btn-full">Отправить Сообщение</button>
+                    <div class="form-group">
+                        <textarea placeholder="Опишите вашу задачу" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-full">Отправить</button>
                 </form>
             </div>
         </div>
     </section>
 
-    <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2026 Портфолио. Все права защищены.</p>
+            <p>&copy; 2026 Попов Алексей. Все права защищены.</p>
         </div>
     </footer>
 

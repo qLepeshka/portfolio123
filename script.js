@@ -120,57 +120,6 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 });
 
 // ====================
-// FORM HANDLING
-// ====================
-const contactForm = document.querySelector('.contact-form');
-
-contactForm.addEventListener('submit', (e) => {
-    e.preventDefault();
-    
-    const btn = contactForm.querySelector('.btn-primary');
-    const originalText = btn.textContent;
-    
-    btn.textContent = 'Отправка...';
-    btn.disabled = true;
-    
-    // Simulate form submission
-    setTimeout(() => {
-        btn.textContent = 'Сообщение Отправлено! ✓';
-        btn.style.background = 'var(--accent-green)';
-        
-        setTimeout(() => {
-            btn.textContent = originalText;
-            btn.style.background = '';
-            btn.disabled = false;
-            contactForm.reset();
-        }, 2000);
-    }, 1500);
-});
-
-// ====================
-// PROJECT CARD PARALLAX
-// ====================
-document.querySelectorAll('.project-card').forEach(card => {
-    card.addEventListener('mousemove', (e) => {
-        const rect = card.getBoundingClientRect();
-        const x = e.clientX - rect.left;
-        const y = e.clientY - rect.top;
-        
-        const centerX = rect.width / 2;
-        const centerY = rect.height / 2;
-        
-        const rotateX = (y - centerY) / 20;
-        const rotateY = (centerX - x) / 20;
-        
-        card.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) translateY(-10px)`;
-    });
-    
-    card.addEventListener('mouseleave', () => {
-        card.style.transform = '';
-    });
-});
-
-// ====================
 // TYPING EFFECT FOR HERO
 // ====================
 const heroTitle = document.querySelector('.hero-title');
@@ -250,3 +199,146 @@ loadStyle.textContent = `
     }
 `;
 document.head.appendChild(loadStyle);
+
+// ====================
+// FIX CONTACT FORM BTN
+// ====================
+const contactFormOld = document.querySelector('.contact-form');
+if (contactFormOld) {
+    contactFormOld.addEventListener('submit', (e) => {
+        e.preventDefault();
+        const btn = contactFormOld.querySelector('.btn-full');
+        const originalText = btn.textContent;
+        btn.textContent = 'Отправка...';
+        btn.disabled = true;
+        setTimeout(() => {
+            btn.textContent = 'Сообщение Отправлено! ✓';
+            btn.style.background = 'var(--accent-green)';
+            setTimeout(() => {
+                btn.textContent = originalText;
+                btn.style.background = '';
+                btn.disabled = false;
+                contactFormOld.reset();
+            }, 2000);
+        }, 1500);
+    });
+}
+
+// ====================
+// LIGHTBOX GALLERY
+// ====================
+const lightbox = document.getElementById('lightbox');
+const lightboxImg = document.getElementById('lightbox-img');
+const lightboxCurrent = document.getElementById('lightbox-current');
+const lightboxTotal = document.getElementById('lightbox-total');
+let currentProject = 1;
+let currentIndex = 0;
+
+const projectImages = {
+    1: ['images/screenshot-9.png', 'images/screenshot-10.png'],
+    2: ['images/screenshot-3.png', 'images/screenshot-4.png'],
+    3: ['images/screenshot-5.png', 'images/screenshot-6.png'],
+    4: ['images/screenshot-7.png', 'images/screenshot-8.png'],
+    5: ['images/screenshot-1.png', 'images/screenshot-2.png']
+};
+
+function openLightbox(project) {
+    currentProject = project;
+    currentIndex = 0;
+    lightboxTotal.textContent = projectImages[project].length;
+    showImage();
+    lightbox.classList.add('active');
+    document.body.style.overflow = 'hidden';
+}
+
+function showImage() {
+    const images = projectImages[currentProject];
+    lightboxImg.src = images[currentIndex];
+    lightboxCurrent.textContent = currentIndex + 1;
+}
+
+function closeLightbox() {
+    lightbox.classList.remove('active');
+    document.body.style.overflow = '';
+}
+
+function nextImage() {
+    const images = projectImages[currentProject];
+    currentIndex = (currentIndex + 1) % images.length;
+    showImage();
+}
+
+function prevImage() {
+    const images = projectImages[currentProject];
+    currentIndex = (currentIndex - 1 + images.length) % images.length;
+    showImage();
+}
+
+document.querySelectorAll('.project-card').forEach(card => {
+    card.addEventListener('click', () => {
+        const project = parseInt(card.dataset.project);
+        if (project) openLightbox(project);
+    });
+});
+
+document.querySelector('.lightbox-close').addEventListener('click', closeLightbox);
+document.querySelector('.lightbox-next').addEventListener('click', nextImage);
+document.querySelector('.lightbox-prev').addEventListener('click', prevImage);
+
+document.addEventListener('keydown', (e) => {
+    if (!lightbox.classList.contains('active')) return;
+    if (e.key === 'Escape') closeLightbox();
+    if (e.key === 'ArrowRight') nextImage();
+    if (e.key === 'ArrowLeft') prevImage();
+});
+
+lightbox.addEventListener('click', (e) => {
+    if (e.target === lightbox) closeLightbox();
+});
+
+// ====================
+// REVIEW FORM
+// ====================
+const reviewForm = document.getElementById('review-form');
+const reviewsGrid = document.getElementById('reviews-grid');
+
+if (reviewForm) {
+    reviewForm.addEventListener('submit', (e) => {
+        e.preventDefault();
+
+        const name = document.getElementById('review-name').value.trim();
+        const company = document.getElementById('review-company').value.trim();
+        const rating = parseInt(document.getElementById('review-rating').value);
+        const text = document.getElementById('review-text').value.trim();
+        if (!name || !text) return;
+
+        const stars = '★'.repeat(rating) + '☆'.repeat(5 - rating);
+        const avatar = name.charAt(0).toUpperCase();
+        const companyHtml = company ? `<span>${company}</span>` : '';
+
+        const card = document.createElement('div');
+        card.className = 'review-card';
+        card.setAttribute('data-aos', 'fade-up');
+        card.innerHTML = `
+            <div class="review-stars">${stars}</div>
+            <p class="review-text">${text}</p>
+            <div class="review-author">
+                <div class="review-avatar">${avatar}</div>
+                <div>
+                    <strong>${name}</strong>
+                    ${companyHtml}
+                </div>
+            </div>
+        `;
+
+        reviewsGrid.prepend(card);
+        reviewForm.reset();
+
+        const btn = reviewForm.querySelector('.btn');
+        const originalText = btn.textContent;
+        btn.textContent = 'Отзыв отправлен! ✓';
+        setTimeout(() => {
+            btn.textContent = originalText;
+        }, 2000);
+    });
+}
