@@ -783,6 +783,19 @@ body:hover .cursor-glow {
         display: flex;
     }
 
+    .navbar .container {
+        flex-wrap: nowrap;
+    }
+
+    .logo .logo-text {
+        display: none;
+    }
+
+    .logo-img {
+        width: 48px;
+        height: 48px;
+    }
+
     .hero-title {
         font-size: 2.5rem;
     }
@@ -861,6 +874,11 @@ body:hover .cursor-glow {
 }
 
 @media (max-width: 480px) {
+    .logo-img {
+        width: 42px;
+        height: 42px;
+    }
+
     .hero-title {
         font-size: 2rem;
     }
