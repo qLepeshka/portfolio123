@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Попов Алексей — Креативный Разработчик</title>
+    <title>GramShift — Цифровое агентство</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
@@ -12,13 +12,17 @@
 
     <nav class="navbar">
         <div class="container">
-            <a href="#" class="logo">ПОТОК</a>
+            <a href="#" class="logo">
+                <img src="images/лого компании.jpg" alt="GramShift" class="logo-img">
+                GramShift
+            </a>
             <ul class="nav-links">
                 <li><a href="#home">Главная</a></li>
                 <li><a href="#services">Услуги</a></li>
                 <li><a href="#projects">Проекты</a></li>
                 <li><a href="#reviews">Отзывы</a></li>
-                <li><a href="#about">Обо мне</a></li>
+                <li><a href="#about">О компании</a></li>
+                <li><a href="#founders">Основатели</a></li>
                 <li><a href="#contact">Контакты</a></li>
             </ul>
             <button class="menu-toggle" aria-label="Menu">
@@ -37,18 +41,18 @@
         </div>
         <div class="container">
             <div class="hero-content">
-                <p class="hero-subtitle">Креативный Разработчик</p>
+                <p class="hero-subtitle">Цифровое Агентство</p>
                 <h1 class="hero-title">
-                    Попов<br>
-                    <span class="gradient-text">Алексей</span>
+                    <span class="gradient-text">GramShift</span>
                 </h1>
                 <p class="hero-description">
-                    Превращаю идеи в современные цифровые продукты: от Telegram-ботов и Mini Apps 
-                    до лендингов и веб-сервисов. Пишу чистый код, проектирую удобные интерфейсы 
-                    и довожу проекты до работающего результата.
+                    Мы — команда профессионалов во главе с <strong>Алексеем Поповым</strong> (разработчик) 
+                    и <strong>Дмитрием Токаревым</strong> (CEO, бизнес-аналитик). Создаём цифровые продукты, 
+                    которые решают реальные задачи бизнеса: от Telegram-ботов и Mini Apps 
+                    до лендингов и веб-сервисов.
                 </p>
                 <div class="hero-buttons">
-                    <a href="#services" class="btn btn-primary">Мои услуги</a>
+                    <a href="#services" class="btn btn-primary">Наши подписки</a>
                     <a href="#projects" class="btn btn-secondary">Портфолио</a>
                 </div>
             </div>
@@ -73,63 +77,63 @@
     <section id="services" class="services">
         <div class="container">
             <div class="section-header">
-                <p class="section-subtitle">Пакеты Разработки</p>
-                <h2 class="section-title">Telegram-боты, сайты и Mini Apps</h2>
+                <p class="section-subtitle">Подписки</p>
+                <h2 class="section-title">Выберите свой тариф</h2>
             </div>
             <div class="services-grid">
                 <div class="service-card" data-aos="fade-up">
                     <div class="service-header">
-                        <h3>Лендинг / Сайт</h3>
-                        <div class="service-price">от 30 000 ₽</div>
+                        <h3>Старт</h3>
+                        <div class="service-price">2 500 ₽/мес</div>
                     </div>
-                    <p class="service-desc">Одностраничный сайт или многостраничный — под ключ</p>
+                    <p class="service-desc">Базовый Telegram бот для старта бизнеса</p>
                     <ul class="service-features">
-                        <li>Современный адаптивный дизайн</li>
-                        <li>Оптимизация под мобильные устройства</li>
-                        <li>Форма обратной связи, интеграции</li>
-                        <li>Настройка хостинга и домена</li>
-                        <li>Базовая SEO-оптимизация</li>
+                        <li>Приветственное меню с кнопками</li>
+                        <li>Система рассылок</li>
+                        <li>Сбор заявок</li>
+                        <li>FAQ-раздел</li>
+                        <li>Базовая техподдержка</li>
                     </ul>
                     <div class="service-tech">
-                        <span>HTML/CSS/JS</span>
-                        <span>Vue/React</span>
-                        <span>Адаптив</span>
+                        <span>JS/C#</span>
+                        <span>PostgreSQL</span>
                     </div>
                 </div>
 
                 <div class="service-card popular" data-aos="fade-up" data-aos-delay="100">
                     <div class="service-badge">Популярный</div>
                     <div class="service-header">
-                        <h3>Telegram Бот</h3>
-                        <div class="service-price">25 000 — 40 000 ₽</div>
+                        <h3>Оптима</h3>
+                        <div class="service-price">5 000 ₽/мес</div>
                     </div>
-                    <p class="service-desc">Для старта бизнеса, базовый функционал</p>
+                    <p class="service-desc">Telegram бот + сайт / лендинг под ключ</p>
                     <ul class="service-features">
-                        <li>Приветственное сообщение и меню с кнопками</li>
-                        <li>Система рассылок (акции, скидки, новинки)</li>
-                        <li>Бонусная система (баллы за подписку, приглашение друга)</li>
-                        <li>Сбор заявок (имя + телефон → администратору)</li>
-                        <li>FAQ-раздел с кнопками</li>
+                        <li>Всё из тарифа «Старт»</li>
+                        <li>Современный адаптивный сайт</li>
+                        <li>Форма обратной связи и интеграции</li>
+                        <li>Настройка хостинга и домена</li>
+                        <li>Базовая SEO-оптимизация</li>
+                        <li>Приоритетная техподдержка</li>
                     </ul>
                     <div class="service-tech">
+                        <span>HTML/CSS/JS</span>
+                        <span>Vue/React</span>
                         <span>Docker</span>
-                        <span>PostgreSQL</span>
-                        <span>JS/C#</span>
                     </div>
                 </div>
 
                 <div class="service-card" data-aos="fade-up" data-aos-delay="200">
                     <div class="service-header">
-                        <h3>Telegram Mini App</h3>
-                        <div class="service-price">70 000 — 120 000 ₽</div>
+                        <h3>Бизнес</h3>
+                        <div class="service-price">10 000 ₽/мес</div>
                     </div>
                     <p class="service-desc">Полноценный инструмент продаж внутри Telegram</p>
                     <ul class="service-features">
-                        <li>Всё из пакета «Telegram Бот»</li>
+                        <li>Всё из тарифа «Оптима»</li>
                         <li>Telegram Mini App (каталог, корзина, профиль)</li>
                         <li>Личный кабинет (история заказов, бонусы)</li>
-                        <li>Админ-панель (контент, статистика, модерация)</li>
-                        <li>Интеграция с CRM и чатом менеджеров</li>
+                        <li>Админ-панель (статистика, модерация)</li>
+                        <li>Интеграция с CRM</li>
                     </ul>
                     <div class="service-tech">
                         <span>C# Бэкенд</span>
@@ -142,16 +146,16 @@
                 <div class="service-card" data-aos="fade-up" data-aos-delay="300">
                     <div class="service-header">
                         <h3>Корпоративный</h3>
-                        <div class="service-price">150 000 — 300 000+ ₽</div>
+                        <div class="service-price">25 000 ₽/мес</div>
                     </div>
-                    <p class="service-desc">Для среднего и крупного бизнеса</p>
+                    <p class="service-desc">Для крупного бизнеса и высоких нагрузок</p>
                     <ul class="service-features">
-                        <li>Всё из пакета «Telegram Mini App»</li>
+                        <li>Всё из тарифа «Бизнес»</li>
                         <li>Приём платежей + чеки внутри Telegram</li>
-                        <li>Система ролей (админ, модератор, менеджер, пользователь)</li>
-                        <li>Глубокая аналитика (воронки, активность, удержание)</li>
-                        <li>Интеграция с 1С, МойСклад, ERP через API</li>
-                        <li>Автодеплой и мониторинг сбоев</li>
+                        <li>Система ролей (админ, модератор, менеджер)</li>
+                        <li>Глубокая аналитика (воронки, удержание)</li>
+                        <li>Интеграция с 1С, МойСклад, ERP</li>
+                        <li>Автодеплой и мониторинг</li>
                     </ul>
                     <div class="service-tech">
                         <span>C#</span>
@@ -164,9 +168,9 @@
                 <div class="service-card" data-aos="fade-up" data-aos-delay="400">
                     <div class="service-header">
                         <h3>Индивидуальный</h3>
-                        <div class="service-price">Цена индивидуально</div>
+                        <div class="service-price">Индивидуально</div>
                     </div>
-                    <p class="service-desc">Нестандартные задачи</p>
+                    <p class="service-desc">Нестандартные задачи и кастомные решения</p>
                     <ul class="service-features">
                         <li>Интеграция с нейросетями</li>
                         <li>Big Data, геолокация</li>
@@ -180,23 +184,23 @@
             </div>
 
             <div class="services-extra" data-aos="fade-up">
-                <h3>Дополнительные услуги</h3>
+                <h3>Что входит во все тарифы</h3>
                 <div class="extra-grid">
                     <div class="extra-item">
                         <span class="extra-title">Хостинг и деплой</span>
-                        <span class="extra-price">от 5 000 ₽</span>
+                        <span class="extra-price">Бесплатно</span>
                     </div>
                     <div class="extra-item">
-                        <span class="extra-title">Техподдержка и обновления</span>
-                        <span class="extra-price">от 10 000 ₽/мес</span>
+                        <span class="extra-title">Техподдержка</span>
+                        <span class="extra-price">Включена</span>
                     </div>
                     <div class="extra-item">
-                        <span class="extra-title">Дизайн сайта / Mini App</span>
-                        <span class="extra-price">от 15 000 ₽</span>
+                        <span class="extra-title">Обновления и доработки</span>
+                        <span class="extra-price">В тарифах</span>
                     </div>
                     <div class="extra-item">
-                        <span class="extra-title">Написание ТЗ</span>
-                        <span class="extra-price">от 5 000 ₽</span>
+                        <span class="extra-title">Бесплатная консультация</span>
+                        <span class="extra-price">30 мин</span>
                     </div>
                 </div>
             </div>
@@ -207,7 +211,7 @@
         <div class="container">
             <div class="section-header">
                 <p class="section-subtitle">Портфолио</p>
-                <h2 class="section-title">Мои Проекты</h2>
+                <h2 class="section-title">Наши Проекты</h2>
             </div>
             <div class="projects-grid">
                 <div class="project-card" data-aos="fade-up" data-project="1">
@@ -392,12 +396,13 @@
         <div class="container">
             <div class="about-content">
                 <div class="about-text">
-                    <p class="section-subtitle">Обо Мне</p>
-                    <h2 class="section-title">Креативный Разработчик</h2>
+                    <p class="section-subtitle">О компании</p>
+                    <h2 class="section-title">GramShift — цифровые решения</h2>
                     <p class="about-description">
-                        Меня зовут Алексей Попов. Я создаю цифровые продукты, которые решают реальные задачи бизнеса: 
+                        Мы создаём цифровые продукты, которые решают реальные задачи бизнеса: 
                         от Telegram-ботов и Mini Apps до лендингов и веб-сервисов. 
-                        Мой подход — чистый код, современные технологии и внимание к деталям на каждом этапе.
+                        Наш подход — чистый код, современные технологии и внимание к деталям на каждом этапе.
+                        Работаем по подписке — вы получаете актуальный продукт без переплат.
                     </p>
                     <div class="skills-grid">
                         <div class="skill-item">
@@ -442,8 +447,63 @@
                         <span class="stat-label">Довольных Клиентов</span>
                     </div>
                     <div class="stat-card">
-                        <span class="stat-number" data-count="2">0</span>
-                        <span class="stat-label">Года Разработки</span>
+                        <span class="stat-number" data-count="12">0</span>
+                        <span class="stat-label">Активных Подписок</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="founders" class="founders">
+        <div class="container">
+            <div class="section-header">
+                <p class="section-subtitle">Основатели</p>
+                <h2 class="section-title">Команда GramShift</h2>
+            </div>
+            <div class="founders-grid">
+                <div class="founder-card" data-aos="fade-up">
+                    <div class="founder-avatar">
+                        <span>АП</span>
+                    </div>
+                    <h3 class="founder-name">Попов Алексей</h3>
+                    <span class="founder-role">Разработчик</span>
+                    <p class="founder-desc">
+                        Отвечает за разработку Telegram-ботов, Mini Apps, сайтов и веб-сервисов. 
+                        Чистый код, современные технологии и надёжность.
+                    </p>
+                    <div class="founder-skills">
+                        <span>C# / .NET</span>
+                        <span>JS / TS</span>
+                        <span>Vue / React</span>
+                        <span>Docker</span>
+                        <span>PostgreSQL</span>
+                    </div>
+                    <div class="founder-contacts">
+                        <a href="https://t.me/qLepeshka" target="_blank">@qLepeshka</a>
+                        <a href="mailto:qlepeshka@gmail.com">qlepeshka@gmail.com</a>
+                    </div>
+                </div>
+
+                <div class="founder-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="founder-avatar">
+                        <span>ДТ</span>
+                    </div>
+                    <h3 class="founder-name">Дмитрий Токарев</h3>
+                    <span class="founder-role">CEO / Бизнес-аналитик</span>
+                    <p class="founder-desc">
+                        Отвечает за стратегию, бизнес-аналитику и коммуникацию с клиентами. 
+                        Помогает превратить идеи в работающие цифровые продукты.
+                    </p>
+                    <div class="founder-skills">
+                        <span>Бизнес-анализ</span>
+                        <span>Управление</span>
+                        <span>Стратегия</span>
+                        <span>Sales</span>
+                        <span>Product</span>
+                    </div>
+                    <div class="founder-contacts">
+                        <a href="https://t.me/T0ka777" target="_blank">@T0ka777</a>
                     </div>
                 </div>
             </div>
@@ -457,7 +517,7 @@
                     <p class="section-subtitle">Связаться</p>
                     <h2 class="section-title">Давайте Работать Вместе</h2>
                     <p class="contact-description">
-                        Есть идея для проекта? Напишите мне — обсудим детали и подберём оптимальное решение.
+                        Есть идея для проекта? Напишите нам — обсудим детали и подберём оптимальный тариф.
                     </p>
                     <div class="contact-links">
                         <a href="mailto:qlepeshka@gmail.com" class="contact-link">
@@ -466,11 +526,16 @@
                         </a>
                         <a href="https://t.me/qLepeshka" class="contact-link" target="_blank">
                             <span class="link-icon">✈️</span>
-                            @qLepeshka
+                            @qLepeshka — Алексей (разработчик)
+                        </a>
+                        <a href="https://t.me/T0ka777" class="contact-link" target="_blank">
+                            <span class="link-icon">✈️</span>
+                            @T0ka777 — Дмитрий (CEO)
                         </a>
                     </div>
                     <div class="social-links">
-                        <a href="https://t.me/qLepeshka" class="social-link" aria-label="Telegram" target="_blank">Tg</a>
+                        <a href="https://t.me/qLepeshka" class="social-link" aria-label="Telegram Алексей" target="_blank">A</a>
+                        <a href="https://t.me/T0ka777" class="social-link" aria-label="Telegram Дмитрий" target="_blank">Д</a>
                         <a href="mailto:qlepeshka@gmail.com" class="social-link" aria-label="Email">Em</a>
                     </div>
                 </div>
@@ -495,7 +560,7 @@
 
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2026 Попов Алексей. Все права защищены.</p>
+            <p>&copy; 2026 GramShift. Все права защищены.</p>
         </div>
     </footer>
 

@@ -82,10 +82,21 @@ body:hover .cursor-glow {
 
 .logo {
     font-family: 'Playfair Display', serif;
-    font-size: 1.5rem;
-    font-weight: 600;
+    font-size: 2.2rem;
+    font-weight: 700;
     color: var(--text-primary);
     text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    letter-spacing: 0.5px;
+}
+
+.logo-img {
+    width: 100px;
+    height: 100px;
+    border-radius: 20px;
+    object-fit: cover;
 }
 
 .nav-links {
@@ -433,23 +444,116 @@ body:hover .cursor-glow {
     border-color: var(--accent-green);
 }
 
-.stat-number {
-    display: block;
-    font-size: 3rem;
-    font-weight: 700;
-    background: linear-gradient(135deg, var(--accent-green), var(--accent-purple));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+/* ==================== */
+/* FOUNDERS SECTION     */
+/* ==================== */
+.founders {
+    padding: 8rem 0;
+    background: var(--bg-primary);
 }
 
-.stat-label {
-    display: block;
+.founders-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.founder-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: 20px;
+    padding: 2.5rem 2rem;
+    text-align: center;
+    transition: var(--transition);
+}
+
+.founder-card:hover {
+    border-color: var(--accent-green);
+    transform: translateY(-5px);
+}
+
+.founder-avatar {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--accent-green), var(--accent-purple));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 0 auto 1.5rem;
+}
+
+.founder-name {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.4rem;
+    margin-bottom: 0.3rem;
+}
+
+.founder-role {
+    display: inline-block;
+    font-size: 0.85rem;
+    color: var(--accent-green);
+    font-weight: 500;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.founder-desc {
     color: var(--text-secondary);
     font-size: 0.9rem;
-    margin-top: 0.5rem;
+    line-height: 1.7;
 }
 
+.founder-skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 1rem;
+    justify-content: center;
+}
+
+.founder-skills span {
+    font-size: 0.75rem;
+    padding: 0.3rem 0.8rem;
+    background: rgba(127, 255, 0, 0.1);
+    border: 1px solid rgba(127, 255, 0, 0.2);
+    border-radius: 20px;
+    color: var(--accent-green);
+}
+
+.founder-contacts {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: 1px solid var(--border-color);
+}
+
+.founder-contacts a {
+    color: var(--text-secondary);
+    text-decoration: none;
+    font-size: 0.85rem;
+    transition: var(--transition);
+}
+
+.founder-contacts a:hover {
+    color: var(--accent-green);
+}
+
+.founder-contacts span {
+    color: var(--text-secondary);
+    font-size: 0.85rem;
+    font-style: italic;
+}
+
+/* ==================== */
+/* CONTACT SECTION      */
 /* ==================== */
 /* CONTACT SECTION      */
 /* ==================== */
@@ -602,7 +706,7 @@ body:hover .cursor-glow {
 }
 
 /* ==================== */
-/* RESPONSIVE           */
+/* RESPONSIVE            */
 /* ==================== */
 @media (max-width: 992px) {
     .hero .container {
@@ -616,6 +720,7 @@ body:hover .cursor-glow {
 
     .hero-description {
         margin: 0 auto 2rem;
+        max-width: 600px;
     }
 
     .hero-buttons {
@@ -637,6 +742,183 @@ body:hover .cursor-glow {
 
     .contact-content {
         grid-template-columns: 1fr;
+    }
+
+    .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .reviews-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .projects-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .extra-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+    }
+
+    .nav-links.active {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: rgba(10, 10, 10, 0.98);
+        padding: 1.5rem 2rem;
+        gap: 1.5rem;
+        border-bottom: 1px solid var(--border-color);
+    }
+
+    .menu-toggle {
+        display: flex;
+    }
+
+    .hero-title {
+        font-size: 2.5rem;
+    }
+
+    .section-title {
+        font-size: 2rem;
+    }
+
+    section,
+    .services,
+    .about,
+    .projects,
+    .contact,
+    .reviews,
+    .founders {
+        padding: 5rem 0;
+    }
+
+    .services-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .about-stats {
+        flex-direction: column;
+    }
+
+    .extra-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .review-form-row {
+        grid-template-columns: 1fr;
+    }
+
+    .founders-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .service-card {
+        padding: 1.5rem;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .hero-buttons .btn {
+        justify-content: center;
+    }
+
+    .founder-card {
+        padding: 2rem 1.5rem;
+    }
+
+    .container {
+        padding: 0 1.5rem;
+    }
+
+    .contact-form .btn-full {
+        width: 100%;
+    }
+
+    .review-card {
+        padding: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-title {
+        font-size: 2rem;
+    }
+
+    .hero-subtitle {
+        font-size: 0.75rem;
+    }
+
+    .hero-description {
+        font-size: 0.95rem;
+    }
+
+    .section-title {
+        font-size: 1.6rem;
+    }
+
+    .section-subtitle {
+        font-size: 0.75rem;
+    }
+
+    section,
+    .services,
+    .about,
+    .projects,
+    .contact,
+    .reviews,
+    .founders {
+        padding: 3.5rem 0;
+    }
+
+    .container {
+        padding: 0 1rem;
+    }
+
+    .service-header h3 {
+        font-size: 1.2rem;
+    }
+
+    .service-price {
+        font-size: 1.2rem;
+    }
+
+    .stat-number {
+        font-size: 2.2rem;
+    }
+
+    .founder-name {
+        font-size: 1.2rem;
+    }
+
+    .founder-avatar {
+        width: 64px;
+        height: 64px;
+        font-size: 1.2rem;
+    }
+
+    .project-thumb {
+        height: 180px;
     }
 }
 
@@ -1116,76 +1398,4 @@ body:hover .cursor-glow {
 .review-form .btn {
     width: 100%;
     margin-top: 0.5rem;
-}
-
-/* ==================== */
-/* RESPONSIVE            */
-/* ==================== */
-@media (max-width: 992px) {
-    .services-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .extra-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .reviews-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .projects-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-@media (max-width: 768px) {
-    .nav-links {
-        display: none;
-    }
-
-    .nav-links.active {
-        display: flex;
-        flex-direction: column;
-        position: absolute;
-        top: 100%;
-        left: 0;
-        right: 0;
-        background: rgba(10, 10, 10, 0.98);
-        padding: 1.5rem 2rem;
-        gap: 1.5rem;
-        border-bottom: 1px solid var(--border-color);
-    }
-
-    .menu-toggle {
-        display: flex;
-    }
-
-    .hero-title {
-        font-size: 2.5rem;
-    }
-
-    .section-title {
-        font-size: 2rem;
-    }
-
-    .projects-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .skills-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .about-stats {
-        flex-direction: column;
-    }
-
-    .extra-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .review-form-row {
-        grid-template-columns: 1fr;
-    }
 }
