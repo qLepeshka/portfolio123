@@ -762,6 +762,16 @@ body:hover .cursor-glow {
 }
 
 @media (max-width: 768px) {
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .hero-description {
+        max-width: none;
+    }
+
     .nav-links {
         display: none;
     }
